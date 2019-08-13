@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Fjalla+One|Josefin+Sans|Josefin+Slab|Pathway+Gothic+One|Pacifico");
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+/*      MAIN SECTION        */
+.main {
+  background-size: cover;
+  background-color: white;
+  height: 100vh;
+}
+
+.heading-base, .heading-primary, .heading-top {
+  text-align: center;
+}
+
+.heading-primary {
+  padding: 100px 0;
+}
+
+.heading-top {
+  padding: 30px 0;
+}
+
+.overview {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1d1d1d;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2d2d3d), to(#929292));
+  background: linear-gradient(to top, #2d2d3d 0, #929292 100%);
+  height: 100vh;
+}
+
+.offers {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #00c2cc;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00c2cc), to(#6f95d3));
+  background: linear-gradient(to top, #00c2cc 0, #6f95d3 100%);
+  height: 100vh;
+}
+
+.footer {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/*TEXTING*/
+.container-mid {
+  max-width: 900px;
+}
+
+.container-full, .container-main, .container-mid, .container-sm, .container-xs {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-center, .text-container-center {
+  display: block;
+  text-align: center;
+}
+
+.text-container-center {
+  position: relative;
+}
+
+/*FONTING*/
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 160%;
+  color: #1d1d1d;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h5 {
+  font-family: 'Pathway Gothic One',sans-serif;
+  font-size: 133px;
+}
+
+.transparentShadow {
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  visibility: hidden;
+}
+/*# sourceMappingURL=common.css.map */

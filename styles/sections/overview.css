@@ -1,0 +1,123 @@
+.overview-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto 0;
+}
+
+.overview-item-left {
+  padding: 0 20px;
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  text-align: left;
+  height: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.overview-item-right {
+  padding: 0 20px;
+  color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  text-align: right;
+  height: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.overview-container ul {
+  list-style-position: inside;
+  padding-left: 0;
+  font-size: 110%;
+  vertical-align: middle;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.overview-item-left.overview-item-dashboard {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background: url("../../img/common/dashboard.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.overview-item-right.overview-item-dashboard {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background: url("../../img/common/themes.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 700px) {
+  .overview-item-left {
+    height: 25%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 700px;
+            flex: 1 0 700px;
+  }
+  .overview-item-right {
+    height: 25%;
+    text-align: left;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0  700px;
+            flex: 1 0  700px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .overview-container ul {
+    font-size: 100%;
+  }
+  .overview-item-left.overview-item-dashboard {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .overview-item-right.overview-item-dashboard {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+/*# sourceMappingURL=overview.css.map */

@@ -1,0 +1,47 @@
+/*
+How to use that on the bottom
+*/
+
+@-webkit-keyframes bounceAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes bounceAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+.bounce {
+  left: 50%;
+  top: 89vh;
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+  color: #fcf2f8;
+}
+
+.bounce:hover {
+  -webkit-animation: bounceAnimation .8s;
+  animation: bounceAnimation .8s;
+}
+
+/*
+https://codepen.io/dodozhang21/pen/siKtp
+ <div class="bounce">
+    <i class="fa fa-caret-down fa-4x" aria-hidden="true"></i>
+ </div>
+*/
+/*# sourceMappingURL=arrowBounce.css.map */

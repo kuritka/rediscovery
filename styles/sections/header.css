@@ -1,0 +1,151 @@
+/*           HEADER                  */
+.header {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 100vh;
+}
+
+.video-text-container {
+  margin-top: 0px;
+}
+
+.nav > li {
+  list-style: none;
+  text-align: center;
+}
+
+.nav > li > a {
+  padding: 20px 16px;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  line-height: 75%;
+  font-family: 'Fjalla One', sans-serif;
+  color: #929292;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.nav > li > a:hover {
+  color: #f2fef3;
+}
+
+.nav > li > a:active {
+  color: #f2fef3;
+  cursor: default;
+}
+
+.nav > li > a .logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 100%;
+  color: #ffd;
+  text-shadow: 2px 2px 2px #000;
+  z-index: 5;
+  text-decoration: underline;
+  padding-bottom: 50px;
+  text-transform: none;
+}
+
+.nav-container {
+  z-index: 20;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 13px;
+}
+
+#nav-menu {
+  visibility: hidden;
+}
+
+#nav-menu.open {
+  z-index: 8;
+  font-weight: 300;
+  font-size: 300%;
+  text-transform: uppercase;
+  background-color: black;
+  opacity: 0.8;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  visibility: visible;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    display: inline-block;
+  }
+}
+
+#title-wrap-container {
+  position: absolute;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 0;
+}
+
+#title-wrap-container > .title-wrap-item {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  z-index: 5;
+  padding: 1%;
+}
+
+#title-wrap-container > .title-wrap-item > .logo {
+  position: relative;
+  font-family: 'Pacifico', cursive;
+  font-size: 600%;
+  color: #ffd;
+  text-shadow: 2px 2px 2px #000;
+  z-index: 5;
+  text-decoration: underline;
+  -webkit-animation-delay: 160ms;
+          animation-delay: 160ms;
+}
+
+#title-wrap-container > .title-wrap-item > .subLogo {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 180%;
+  color: #ffd;
+  text-shadow: 2px 2px 2px #000;
+  z-index: 5;
+  text-decoration: none;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.rotate {
+  /* Safari */
+  -webkit-transform: rotate(-3.5deg);
+  /* Firefox */
+  /* IE */
+  /* Opera */
+  transform: rotate(-3.5deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/*
+usage of title-wrap
+<div id="wrap">
+<div class="inner">
+<h1 class="animated fadeInDown">Rediscovery</h1>
+</div>
+
+// */
+/*# sourceMappingURL=header.css.map */

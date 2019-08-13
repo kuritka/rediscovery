@@ -1,0 +1,56 @@
+.contacts-container
+{
+  display: flex;
+  flex-direction: column;
+  bottom: 0px;
+  height: 100vh;
+}
+
+
+.contacts
+{
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 45vh;
+  width: 100%;
+}
+
+.contacts > .contactsTitle {
+  align-self: flex-start;
+}
+
+.contacts > .contactList {
+  align-self: center;
+}
+
+.contactList a {
+  color: #1d1d1d;;
+}
+.contactList > ul >li
+{
+  align-self: flex-start;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  color: #1d1d1d;;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: -2.5em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+#map {
+  //  margin-top: 10em;  
+    align-self:  flex-end;
+    bottom: 0em;
+    height: 55vh;
+    width:100%;
+    filter: gray; /* IE6-9 */
+	  -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+    -webkit-backface-visibility: hidden;
+    align-self: flex-end;
+}

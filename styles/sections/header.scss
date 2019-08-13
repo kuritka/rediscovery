@@ -1,0 +1,178 @@
+
+$media-xs: 548px;
+$media-s: 768px;
+$media-m: 932px;
+$media-l: 1280px;
+
+$overview-menu-color: #929292;
+$overview-menu-color-active: #f2fef3;
+$overview-menu-background: black;
+
+$title-color: #ffd;
+
+
+/*           HEADER                  */
+.header
+{
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white ;
+    // background-color: #00c4c5;
+    // background: linear-gradient(to left top,$background-gradient-from 0,$background-gradient-to 100%);
+    height: 100vh;
+}
+
+@mixin logo($size) {
+    font-family:  'Pacifico', cursive;
+    font-size: $size;
+    color: #ffd;
+    text-shadow: 2px 2px 2px #000;
+    z-index: 5;
+    text-decoration: underline;
+}
+
+
+.video-text-container {
+    margin-top: 0px;
+}
+
+
+.nav > li 
+{    
+    list-style:none;
+    text-align: center;
+}
+
+.nav > li > a {
+    padding: 20px 16px;
+    display: block;   
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 75%;
+    font-family: 'Fjalla One', sans-serif;
+    color: $overview-menu-color;// #1d1d1d;
+    transition: color 200ms ease;    
+}
+
+
+.nav > li > a:hover {
+    color: $overview-menu-color-active;
+}
+
+.nav > li > a:active {
+    color:  $overview-menu-color-active;
+    cursor: default;
+}
+
+
+.nav > li > a .logo {
+    @include logo(100%);
+    padding-bottom: 50px;
+     text-transform: none;
+}
+
+.nav-container 
+{
+    z-index: 20;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding:13px;
+}
+
+#nav-menu{
+    visibility: hidden;
+}
+#nav-menu.open
+{
+    z-index: 8;
+    font-weight: 300;
+    font-size: 300%;
+    text-transform: uppercase;
+    background-color: $overview-menu-background;
+ //   background: linear-gradient(to left top,$background-gradient-from 0,$background-gradient-to 100%);
+    opacity: 0.8;
+    right:0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    visibility:visible;
+}
+
+@media only screen and (min-width: $media-s)
+{
+    nav
+    {
+        display: inline-block;
+    }
+}
+
+
+#title-wrap-container {
+    position: absolute;
+    justify-content: space-around;
+    height: 100vh;
+    width:100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    z-index: 0;
+    > .title-wrap-item{
+            align-self: center;
+             text-align: center;
+             z-index: 5;
+             padding: 1%;
+         >.logo{
+             position: relative;
+             @include logo(600%);
+             animation-delay: 160ms;
+            // font-family:  'Pacifico', cursive;
+            // font-size: 600%;
+            // color: #ffd;
+            // text-shadow: 2px 2px 2px #000;
+            // z-index: 5;
+            // text-decoration: underline;
+        }
+        >.subLogo{
+            font-family: 'Josefin Sans', sans-serif;  
+            font-size: 180%;
+            color: #ffd;
+            text-shadow: 2px 2px 2px #000;
+            z-index: 5;
+            text-decoration: none;
+            animation-delay: 900ms;
+        }
+    }
+}
+
+$titleRotation: -3.5deg;
+.rotate{
+    /* Safari */
+-webkit-transform: rotate($titleRotation);
+
+/* Firefox */
+-moz-transform: rotate($titleRotation);
+
+/* IE */
+-ms-transform: rotate($titleRotation);
+
+/* Opera */
+-o-transform: rotate($titleRotation);
+transform: rotate($titleRotation);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+
+}
+
+/*
+usage of title-wrap
+<div id="wrap">
+<div class="inner">
+<h1 class="animated fadeInDown">Rediscovery</h1>
+</div>
+
+// */
+// http://jsfiddle.net/apaul34208/ZyKar/3/
