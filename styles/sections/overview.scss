@@ -11,7 +11,7 @@ $minwidth: 50%;
 
 @mixin overview-item($content-position) {
     padding:0 20px;
-    color:#fff;
+   // color: #1d1d1d;
     flex: 1 0 $minwidth;
     text-align: $content-position;
     height: 33.3%;  
@@ -20,6 +20,8 @@ $minwidth: 50%;
     align-content: center;
     align-items: center;
     order: 1;
+   // font-family: 'Josefin Sans', sans-serif;
+  // font-family: 'Roboto', sans-serif;
   //  border: 1px solid black;
 }
 
@@ -33,6 +35,40 @@ $minwidth: 50%;
     align-items: center;
     width:100%;
     margin: auto 0;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.overview-container green {
+    color: rgb(57, 168, 57)
+}
+
+
+.overview-container blue {
+    color: rgb(36, 77, 190)
+}
+
+
+
+.overview-container red {
+    color: rgb(190, 36, 62)
+}
+
+.overview-container p {
+    font-size: 12px;
+   // text-transform: uppercase;
+    line-height: 1.4;
+   // letter-spacing: 3px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.overview-container h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    font-weight: 1000;
+    font-family: 'Meera Inimai', sans-serif;
 }
 
 
@@ -59,21 +95,20 @@ $minwidth: 50%;
 
 
 
-// .overview-item-dashboard:nth-of-type(1){
-//     order: 1;
-//      @include backgroundImage('../../img/common/dashboard.jpg');
-// }
-
-.overview-item-left.overview-item-dashboard{
-      order: 1;
-      @include backgroundImage('../../img/common/dashboard.jpg');
-}
-
-.overview-item-right.overview-item-dashboard{
+.overview-item-dashboard:nth-of-type(2){
     order: 1;
-     @include backgroundImage('../../img/common/themes.jpg');
+     @include backgroundImage('../../img/common/work1.png');
 }
 
+.overview-item-dashboard:nth-of-type(3){
+    order: 1;
+     @include backgroundImage('../../img/common/team.jpg');     
+}
+
+.overview-item-dashboard:nth-of-type(6){
+    order: 1;
+     @include backgroundImage('../../img/common/pair-programming.jpg');     
+}
 
 @media only  screen and (max-width: 700px) {
     .overview-item-left {
@@ -88,19 +123,26 @@ $minwidth: 50%;
          justify-content: flex-start;
      }
 
-    .overview-container ul {
-        font-size: 100%;
+     .overview-container {
+         height:   100%;
+     }
+
+
+     .overview-item-dashboard:nth-of-type(2){
+        order: 6;
+         @include backgroundImage('../../img/common/work1.png');
     }
-
-
-    .overview-item-left.overview-item-dashboard{
-        order: 1;
+    
+    .overview-item-dashboard:nth-of-type(3){
+        order: 5;
+         @include backgroundImage('../../img/common/team.jpg');     
     }
-
-    .overview-item-right.overview-item-dashboard{
-        order: 3;
+    
+    .overview-item-dashboard:nth-of-type(6){
+        order: 0;
+         @include backgroundImage('../../img/common/pair-programming.jpg');     
     }
-
+    
 }
 
 
